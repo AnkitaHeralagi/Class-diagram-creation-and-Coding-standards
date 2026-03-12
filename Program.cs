@@ -1,26 +1,26 @@
 ﻿using System;
 
-namespace ArrayTestProgram
+namespace LoopTestProgram
 {
-    class ArrayTest
+    class LoopTest
     {
         static void Main(string[] args)
         {
-            string[] names = { "Ankita", "Akul", "Priya", "Amit", "Neha" };
-
             Console.WriteLine("Printing using FOR loop:");
 
-            for (int i = 0; i < names.Length; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                Console.WriteLine("Index: " + i + "  Name: " + names[i]);
+                Console.WriteLine("Ankita");
             }
             Console.WriteLine();
 
-            Console.WriteLine("Printing using FOREACH loop:");
+            Console.WriteLine("Printing using WHILE loop:");
 
-            foreach (string name in names)
+            int j = 1;
+            while (j <= 5)
             {
-                Console.WriteLine("Name: " + name);
+                Console.WriteLine("Ankita");
+                j++;
             }
         }
     }
